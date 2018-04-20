@@ -1,0 +1,3 @@
+[18-Nov-2017 23:58:00 America/Chicago] PHP Fatal error:  Call to undefined function getAccessToken() in /home/emerynhv/public_html/kadlxt/sendata.php on line 12
+[18-Nov-2017 23:58:25 America/Chicago] PHP Fatal error:  Call to undefined function getAccessToken() in /home/emerynhv/public_html/kadlxt/sendata.php on line 12
+[19-Nov-2017 00:03:15 America/Chicago] PHP Notice:  Undefined index: openid in /home/emerynhv/public_html/kadlxt/index.php on line 66

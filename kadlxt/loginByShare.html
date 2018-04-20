@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=0">
+
+    <title>跳转页</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>	 
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- qq分享组件 -->
+    <script type="text/javascript" src="https://qzonestyle.gtimg.cn/qzone/qzact/common/share/share.js"></script>
+</head>
+<body style="background: rgba(118, 79, 145, 0.24)">
+    <div>
+        <div>
+            <img id="img-share" src="img/img5.png" style="display:none;width:80%;height:auto;position:absolute;left:10%;top:5%;border: 4px solid #ddd;">
+            <img id="img-word" src="img/img6.png" style="display:none;width: 76%;height: auto;position: absolute;left: 20%;top: 60%;">
+        </div>
+        <button id="btn-in" style="display:none;width: 52%;height: 7%;position: absolute;left: 24%;bottom: 6%;border: 4px solid rgb(221, 221, 221);border-radius: 20px;color: #c7f1ea;background: #5cb7b8;font-size: 19px;font-weight: 700;">点击进入象记</a>
+    </div>
+    <script>
+        setShareInfo({
+			title:   '象记',
+			summary: '——最好用的象限管理法',
+			pic:     'https://www.kadlxt.com/kadlxt/img/logo.jpg',
+			url:     "https://www.kadlxt.com/kadlxt/loginByShare.html"
+        });
+        
+        $("#btn-in").click(function(){
+            window.location.href = "https://api.uni.qq.com/connect/oauth2/authorize?appid=test_835056957&redirect_uri=https://www.kadlxt.com/kadlxt/login.php&response_type=code&state=111";
+        });
+        $(document).ready(function(){
+            $("#img-share").fadeIn(1000);
+            $("#img-word").delay(600);
+            $("#img-word").slideDown(1000);
+            $("#btn-in").delay(1000);
+            $("#btn-in").fadeIn(1000);
+        });
+    </script>
+</body>
+</html>
